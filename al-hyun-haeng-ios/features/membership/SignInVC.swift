@@ -120,8 +120,7 @@ class SignInVC: BaseVC {
         }
         
         private func goToProfile(userId: String, social: String) {
-            print("goToProfile")
-//            navigationController?.pushViewController(ProfileVC.instance(id: userId, social: social), animated: true)
+            navigationController?.pushViewController(ProfileVC.instance(id: userId, social: social), animated: true)
         }
     }
 

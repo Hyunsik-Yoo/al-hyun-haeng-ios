@@ -15,6 +15,9 @@
 		6E76E8762488B508006102E6 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E8752488B508006102E6 /* AlertUtils.swift */; };
 		6E76E8782488BA47006102E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E76E8772488BA47006102E6 /* GoogleService-Info.plist */; };
 		6E76E87A2488BE5B006102E6 /* FirebaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E8792488BE5B006102E6 /* FirebaseUtils.swift */; };
+		6E76E87D2488C36B006102E6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E87C2488C36B006102E6 /* ProfileView.swift */; };
+		6E76E87F2488C927006102E6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E87E2488C927006102E6 /* ProfileVC.swift */; };
+		6E76E8812488DA84006102E6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E8802488DA84006102E6 /* ProfileViewModel.swift */; };
 		6ED3C59D2485E82600DBBE6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3C59C2485E82600DBBE6B /* AppDelegate.swift */; };
 		6ED3C59F2485E82600DBBE6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3C59E2485E82600DBBE6B /* SceneDelegate.swift */; };
 		6ED3C5A12485E82600DBBE6B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3C5A02485E82600DBBE6B /* SignInVC.swift */; };
@@ -57,6 +60,9 @@
 		6E76E8772488BA47006102E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6E76E8792488BE5B006102E6 /* FirebaseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtils.swift; sourceTree = "<group>"; };
 		6E76E87B2488BF1C006102E6 /* al-hyun-haeng-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "al-hyun-haeng-ios.entitlements"; sourceTree = "<group>"; };
+		6E76E87C2488C36B006102E6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6E76E87E2488C927006102E6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		6E76E8802488DA84006102E6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		6ED3C5992485E82600DBBE6B /* al-hyun-haeng-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "al-hyun-haeng-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED3C59C2485E82600DBBE6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ED3C59E2485E82600DBBE6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +231,9 @@
 				6ED3C5A02485E82600DBBE6B /* SignInVC.swift */,
 				6ED3C5D42485EFFE00DBBE6B /* SignInView.swift */,
 				6E76E86D2488B20E006102E6 /* SignInViewModel.swift */,
+				6E76E87C2488C36B006102E6 /* ProfileView.swift */,
+				6E76E87E2488C927006102E6 /* ProfileVC.swift */,
+				6E76E8802488DA84006102E6 /* ProfileViewModel.swift */,
 			);
 			path = membership;
 			sourceTree = "<group>";
@@ -434,6 +443,7 @@
 				6E76E8712488B276006102E6 /* UserDefaultsUtils.swift in Sources */,
 				6ED3C5CE2485EC3C00DBBE6B /* UIViewExt.swift in Sources */,
 				6ED3C5A12485E82600DBBE6B /* SignInVC.swift in Sources */,
+				6E76E87F2488C927006102E6 /* ProfileVC.swift in Sources */,
 				6ED3C5CA2485EC1E00DBBE6B /* BaseCollectionViewCell.swift in Sources */,
 				6E76E8762488B508006102E6 /* AlertUtils.swift in Sources */,
 				6E76E87A2488BE5B006102E6 /* FirebaseUtils.swift in Sources */,
@@ -441,8 +451,10 @@
 				6E76E86E2488B20E006102E6 /* SignInViewModel.swift in Sources */,
 				6ED3C59D2485E82600DBBE6B /* AppDelegate.swift in Sources */,
 				6E76E8742488B2F2006102E6 /* UserServices.swift in Sources */,
+				6E76E87D2488C36B006102E6 /* ProfileView.swift in Sources */,
 				6ED3C59F2485E82600DBBE6B /* SceneDelegate.swift in Sources */,
 				6ED3C5D52485EFFE00DBBE6B /* SignInView.swift in Sources */,
+				6E76E8812488DA84006102E6 /* ProfileViewModel.swift in Sources */,
 				6ED3C5C32485EBCD00DBBE6B /* BaseView.swift in Sources */,
 				6ED3C5CC2485EC2900DBBE6B /* BaseViewModel.swift in Sources */,
 				6ED3C5C82485EC1200DBBE6B /* BaseTableViewCell.swift in Sources */,
