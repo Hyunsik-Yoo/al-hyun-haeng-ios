@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		11446532320ED05DDD15FB2C /* Pods_al_hyun_haeng_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231876B64E350F938D679489 /* Pods_al_hyun_haeng_iosTests.framework */; };
 		593C862838EDFCF3989179C3 /* Pods_al_hyun_haeng_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1B55D85C7809368BE77C37 /* Pods_al_hyun_haeng_ios.framework */; };
+		6E76E86E2488B20E006102E6 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E86D2488B20E006102E6 /* SignInViewModel.swift */; };
+		6E76E8712488B276006102E6 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E8702488B276006102E6 /* UserDefaultsUtils.swift */; };
+		6E76E8742488B2F2006102E6 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E8732488B2F2006102E6 /* UserServices.swift */; };
+		6E76E8762488B508006102E6 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E8752488B508006102E6 /* AlertUtils.swift */; };
+		6E76E8782488BA47006102E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E76E8772488BA47006102E6 /* GoogleService-Info.plist */; };
+		6E76E87A2488BE5B006102E6 /* FirebaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E8792488BE5B006102E6 /* FirebaseUtils.swift */; };
 		6ED3C59D2485E82600DBBE6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3C59C2485E82600DBBE6B /* AppDelegate.swift */; };
 		6ED3C59F2485E82600DBBE6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3C59E2485E82600DBBE6B /* SceneDelegate.swift */; };
 		6ED3C5A12485E82600DBBE6B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3C5A02485E82600DBBE6B /* SignInVC.swift */; };
@@ -44,6 +50,13 @@
 		05069A87983A4698B4EBCF0B /* Pods-al-hyun-haeng-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-al-hyun-haeng-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-al-hyun-haeng-iosTests/Pods-al-hyun-haeng-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		231876B64E350F938D679489 /* Pods_al_hyun_haeng_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_al_hyun_haeng_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1B55D85C7809368BE77C37 /* Pods_al_hyun_haeng_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_al_hyun_haeng_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E76E86D2488B20E006102E6 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		6E76E8702488B276006102E6 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
+		6E76E8732488B2F2006102E6 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		6E76E8752488B508006102E6 /* AlertUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
+		6E76E8772488BA47006102E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6E76E8792488BE5B006102E6 /* FirebaseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtils.swift; sourceTree = "<group>"; };
+		6E76E87B2488BF1C006102E6 /* al-hyun-haeng-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "al-hyun-haeng-ios.entitlements"; sourceTree = "<group>"; };
 		6ED3C5992485E82600DBBE6B /* al-hyun-haeng-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "al-hyun-haeng-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED3C59C2485E82600DBBE6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ED3C59E2485E82600DBBE6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +114,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6E76E8722488B2E7006102E6 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				6E76E8732488B2F2006102E6 /* UserServices.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		6ED3C5902485E82600DBBE6B = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +145,8 @@
 		6ED3C59B2485E82600DBBE6B /* al-hyun-haeng-ios */ = {
 			isa = PBXGroup;
 			children = (
+				6E76E87B2488BF1C006102E6 /* al-hyun-haeng-ios.entitlements */,
+				6E76E8722488B2E7006102E6 /* services */,
 				6ED3C5D62485F0BA00DBBE6B /* resource */,
 				6ED3C5C42485EBF000DBBE6B /* extension */,
 				6ED3C5BF2485EBBD00DBBE6B /* utils */,
@@ -133,6 +156,7 @@
 				6ED3C5A52485E82600DBBE6B /* Assets.xcassets */,
 				6ED3C5A72485E82600DBBE6B /* LaunchScreen.storyboard */,
 				6ED3C5AA2485E82600DBBE6B /* Info.plist */,
+				6E76E8772488BA47006102E6 /* GoogleService-Info.plist */,
 			);
 			path = "al-hyun-haeng-ios";
 			sourceTree = "<group>";
@@ -158,6 +182,9 @@
 		6ED3C5BF2485EBBD00DBBE6B /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				6E76E8702488B276006102E6 /* UserDefaultsUtils.swift */,
+				6E76E8752488B508006102E6 /* AlertUtils.swift */,
+				6E76E8792488BE5B006102E6 /* FirebaseUtils.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -197,6 +224,7 @@
 			children = (
 				6ED3C5A02485E82600DBBE6B /* SignInVC.swift */,
 				6ED3C5D42485EFFE00DBBE6B /* SignInView.swift */,
+				6E76E86D2488B20E006102E6 /* SignInViewModel.swift */,
 			);
 			path = membership;
 			sourceTree = "<group>";
@@ -321,6 +349,7 @@
 				6ED3C5DC2486027E00DBBE6B /* SpoqaHanSans-Bold.ttf in Resources */,
 				6ED3C5DE2486027E00DBBE6B /* SpoqaHanSans-Thin.ttf in Resources */,
 				6ED3C5DD2486027E00DBBE6B /* SpoqaHanSans-Regular.ttf in Resources */,
+				6E76E8782488BA47006102E6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,11 +431,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E76E8712488B276006102E6 /* UserDefaultsUtils.swift in Sources */,
 				6ED3C5CE2485EC3C00DBBE6B /* UIViewExt.swift in Sources */,
 				6ED3C5A12485E82600DBBE6B /* SignInVC.swift in Sources */,
 				6ED3C5CA2485EC1E00DBBE6B /* BaseCollectionViewCell.swift in Sources */,
+				6E76E8762488B508006102E6 /* AlertUtils.swift in Sources */,
+				6E76E87A2488BE5B006102E6 /* FirebaseUtils.swift in Sources */,
 				6ED3C5D02485EC4D00DBBE6B /* UIColorExt.swift in Sources */,
+				6E76E86E2488B20E006102E6 /* SignInViewModel.swift in Sources */,
 				6ED3C59D2485E82600DBBE6B /* AppDelegate.swift in Sources */,
+				6E76E8742488B2F2006102E6 /* UserServices.swift in Sources */,
 				6ED3C59F2485E82600DBBE6B /* SceneDelegate.swift in Sources */,
 				6ED3C5D52485EFFE00DBBE6B /* SignInView.swift in Sources */,
 				6ED3C5C32485EBCD00DBBE6B /* BaseView.swift in Sources */,
@@ -566,6 +600,7 @@
 			baseConfigurationReference = F2BBD331F9C39135573939A9 /* Pods-al-hyun-haeng-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "al-hyun-haeng-ios/al-hyun-haeng-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X975A2HM62;
 				INFOPLIST_FILE = "al-hyun-haeng-ios/Info.plist";
@@ -585,6 +620,7 @@
 			baseConfigurationReference = E1B2541A508CA553E0ED93D1 /* Pods-al-hyun-haeng-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "al-hyun-haeng-ios/al-hyun-haeng-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X975A2HM62;
 				INFOPLIST_FILE = "al-hyun-haeng-ios/Info.plist";
