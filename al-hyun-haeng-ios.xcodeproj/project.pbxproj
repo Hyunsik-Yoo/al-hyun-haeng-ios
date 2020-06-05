@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		11446532320ED05DDD15FB2C /* Pods_al_hyun_haeng_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231876B64E350F938D679489 /* Pods_al_hyun_haeng_iosTests.framework */; };
 		593C862838EDFCF3989179C3 /* Pods_al_hyun_haeng_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1B55D85C7809368BE77C37 /* Pods_al_hyun_haeng_ios.framework */; };
+		6E25341C248A25B5001334AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E25341B248A25B5001334AE /* User.swift */; };
+		6E25341E248A27D6001334AE /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E25341D248A27D6001334AE /* Record.swift */; };
+		6E253420248A2849001334AE /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E25341F248A2849001334AE /* GameType.swift */; };
 		6E76E86E2488B20E006102E6 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E86D2488B20E006102E6 /* SignInViewModel.swift */; };
 		6E76E8712488B276006102E6 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E8702488B276006102E6 /* UserDefaultsUtils.swift */; };
 		6E76E8742488B2F2006102E6 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76E8732488B2F2006102E6 /* UserServices.swift */; };
@@ -53,6 +56,9 @@
 		05069A87983A4698B4EBCF0B /* Pods-al-hyun-haeng-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-al-hyun-haeng-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-al-hyun-haeng-iosTests/Pods-al-hyun-haeng-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		231876B64E350F938D679489 /* Pods_al_hyun_haeng_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_al_hyun_haeng_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1B55D85C7809368BE77C37 /* Pods_al_hyun_haeng_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_al_hyun_haeng_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E25341B248A25B5001334AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6E25341D248A27D6001334AE /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		6E25341F248A2849001334AE /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
 		6E76E86D2488B20E006102E6 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		6E76E8702488B276006102E6 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		6E76E8732488B2F2006102E6 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
@@ -120,6 +126,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6E25341A248A25A2001334AE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6E25341B248A25B5001334AE /* User.swift */,
+				6E25341D248A27D6001334AE /* Record.swift */,
+				6E25341F248A2849001334AE /* GameType.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		6E76E8722488B2E7006102E6 /* services */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +167,7 @@
 		6ED3C59B2485E82600DBBE6B /* al-hyun-haeng-ios */ = {
 			isa = PBXGroup;
 			children = (
+				6E25341A248A25A2001334AE /* model */,
 				6E76E87B2488BF1C006102E6 /* al-hyun-haeng-ios.entitlements */,
 				6E76E8722488B2E7006102E6 /* services */,
 				6ED3C5D62485F0BA00DBBE6B /* resource */,
@@ -446,6 +463,7 @@
 				6E76E87F2488C927006102E6 /* ProfileVC.swift in Sources */,
 				6ED3C5CA2485EC1E00DBBE6B /* BaseCollectionViewCell.swift in Sources */,
 				6E76E8762488B508006102E6 /* AlertUtils.swift in Sources */,
+				6E25341E248A27D6001334AE /* Record.swift in Sources */,
 				6E76E87A2488BE5B006102E6 /* FirebaseUtils.swift in Sources */,
 				6ED3C5D02485EC4D00DBBE6B /* UIColorExt.swift in Sources */,
 				6E76E86E2488B20E006102E6 /* SignInViewModel.swift in Sources */,
@@ -460,6 +478,8 @@
 				6ED3C5C82485EC1200DBBE6B /* BaseTableViewCell.swift in Sources */,
 				6ED3C5D22485EC5E00DBBE6B /* UIImageViewExt.swift in Sources */,
 				6ED3C5C62485EC0000DBBE6B /* BaseVC.swift in Sources */,
+				6E25341C248A25B5001334AE /* User.swift in Sources */,
+				6E253420248A2849001334AE /* GameType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
