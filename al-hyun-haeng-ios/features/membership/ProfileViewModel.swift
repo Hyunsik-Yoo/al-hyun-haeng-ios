@@ -64,6 +64,7 @@ class ProfileViewModel: BaseViewModel {
                         
                         self.userService.signup(user: user) { (observable) in
                             observable.subscribe(onNext: { (_) in
+                                self.userDefaults.setToken(token: id)
                                 self.goToMainPublisher.onNext(())
                                 self.showLoadingPublisher.onNext(false)
                             }, onError: { (error) in
