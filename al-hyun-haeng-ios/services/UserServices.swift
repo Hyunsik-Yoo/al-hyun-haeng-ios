@@ -24,7 +24,7 @@ class UserService: UserServiceProtocol {
     }
     
     func findUserByName(name: String, completion: @escaping ((Observable<[User]>) -> Void)) {
-        Firestore.firestore().collection("user").whereField("name", isEqualTo: "id").getDocuments { (snapshot, error) in
+        Firestore.firestore().collection("user").whereField("name", isEqualTo: name).getDocuments { (snapshot, error) in
             if let error = error {
                 completion(Observable.error(error))
             } else {
