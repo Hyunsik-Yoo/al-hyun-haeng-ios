@@ -42,7 +42,7 @@ class UserService: UserServiceProtocol {
     }
     
     func signup(user: User, completion: @escaping ((Observable<Void>) -> Void)) {
-        Firestore.firestore().collection("user").addDocument(data: user.toDict()) { (error) in
+        Firestore.firestore().collection("user").document(user.id).setData(user.toDict()) { (error) in
             if let error = error {
                 completion(Observable.error(error))
             } else {
