@@ -6,6 +6,7 @@ protocol UserServiceProtocol {
     func validateUser(token: String, completion: @escaping ((Bool) -> Void))
     func findUserByName(name: String, completion: @escaping ((Observable<[User]>) -> Void))
     func signup(user: User, completion: @escaping ((Observable<Void>) -> Void))
+    func findUserById(id: String, completion: @escaping ((Observable<User>) -> Void))
 }
 
 class UserService: UserServiceProtocol {
@@ -47,6 +48,24 @@ class UserService: UserServiceProtocol {
                 completion(Observable.error(error))
             } else {
                 completion(Observable.just(()))
+            }
+        }
+    }
+    
+    func findUserById(id: String, completion: @escaping ((Observable<User>) -> Void)) {
+        Firestore.firestore().collection("user").document(id).getDocument { (snapshot, error) in
+            if let error = error {
+                completion(Observable.error(error))
+            } else {
+                if let data = snapshot?.data() {
+                    let user = User(map: data)
+                    
+                    completion(Observable.just(user))
+                } else {
+                    let error = CommonError(desc: "data is nil")
+                    
+                    completion(Observable.error(error))
+                }
             }
         }
     }

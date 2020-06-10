@@ -28,7 +28,7 @@ class SplashVC: BaseVC {
     
     private func goToSignIn() {
         if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
-            sceneDelegate.goToMain()
+            sceneDelegate.goToSignIn()
         }
     }
 }

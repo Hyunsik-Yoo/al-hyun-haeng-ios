@@ -3,3 +3,10 @@
 
 // 마이 페이지 화면
 "title_my_page" = "마이 페이지";
+"my_recent_record" = "나의 최근 기록";
+"btn_more" = "더보기";
+
+// 설정화면
+"title_setting" = "설정";
+"sign_out" = "로그아웃";
+"membership_withdraw" = "회원 탈퇴";

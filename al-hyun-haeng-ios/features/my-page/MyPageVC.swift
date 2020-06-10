@@ -15,9 +15,17 @@ class MyPageVC: BaseVC {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         view = myPageView
         setupNavigationBar()
+        
+        super.viewDidLoad()
+    }
+    
+    override func bindEvent() {
+        navigationItem.rightBarButtonItem?.rx.tap.bind(onNext: { [weak self] (_) in
+            guard let self = self else { return }
+            self.navigationController?.pushViewController(SettingVC.instance(), animated: true)
+        }).disposed(by: disposeBag)
     }
     
     private func setupNavigationBar() {
